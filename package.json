@@ -1,0 +1,21 @@
+{
+  "name": "@vaalentin/gl-shader",
+  "version": "1.0.0",
+  "description": "WebGL shader wrapper.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaalentin/gl-shader.git"
+  },
+  "keywords": [
+    "WebGL"
+  ],
+  "author": "vaalentin <vaalentin@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaalentin/gl-shader/issues"
+  },
+  "homepage": "https://github.com/vaalentin/gl-shader#readme"
+}
+
