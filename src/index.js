@@ -17,7 +17,8 @@ export default class Shader {
     this.gl.compileShader(this.shader);
 
     if(!this.gl.getShaderParameter(this.shader, this.gl.COMPILE_STATUS)) {
-      throw('Error while compiling shader: ' + this.gl.getShaderInfoLog(this.shader));
+      const error = this.gl.getShaderInfoLog(this.shader);
+      throw new Error(`Error while compiling shader: ${error}`);
     }
   }
 
@@ -28,8 +29,6 @@ export default class Shader {
   dispose() {
     this.gl.deleteShader(this.shader);
     this.shader = null;
-
-    this.gl = null;
   }
 }
 
